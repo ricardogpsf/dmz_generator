@@ -1,0 +1,69 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+
+.main {
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dmz-lindao {
+  width: 140px;
+  height: 140px;
+}
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+.excuse-content {
+  font-style: italic;
+  margin-top: 20px
+}
+
+#loading {
+ height: 11px;
+ width: 16px;
+ display: none;
+}
+
+@media (min-device-width: 150px) {
+  .mastfoot {
+    position: relative;
+    margin-top: 20px;
+  }
+  /* Handle the widths */
+  .mastfoot,
+  .main {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-device-width: 768px) {
+  .mastfoot {
+    position: absolute;
+    bottom: 0;
+  }
+  .mastfoot,
+  .main {
+    width: 600px; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-device-width: 992px) {
+  .mastfoot,
+  .main {
+    width: 700px;
+  }
+}
