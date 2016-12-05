@@ -1,5 +1,5 @@
-var URL_EXCUSES = 'data/desculpas_do_dmz.json';
-// var URL_EXCUSES = 'https://gist.githubusercontent.com/ricardogpsf/1843675aa6ca742dfad6ceef6922b81a/raw/da6699488e275a8b963fd5a6f638200d7938c0b4/desculpas_do_dmz.js';
+// var URL_EXCUSES = 'data/desculpas_do_dmz.json';
+var URL_EXCUSES = 'https://gist.githubusercontent.com/ricardogpsf/1843675aa6ca742dfad6ceef6922b81a/raw';
 
 var CSS_LOADING = ' loading';
 var loadingElement = document.getElementById('loading');
@@ -11,7 +11,8 @@ document.getElementById('excuse-btn').onclick = function() {
 
 function findExcuses(callback) {
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open('GET', URL_EXCUSES, true);
+  var url = URL_EXCUSES + '?timestamp=' + new Date().getTime();
+  xmlhttp.open('GET', url, true);
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       callback(JSON.parse(xmlhttp.responseText));
