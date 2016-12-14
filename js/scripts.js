@@ -1,5 +1,6 @@
 // var URL_EXCUSES = 'data/desculpas_do_dmz.json';
-var URL_EXCUSES = 'https://gist.githubusercontent.com/ricardogpsf/1843675aa6ca742dfad6ceef6922b81a/raw';
+// var URL_EXCUSES = 'https://gist.githubusercontent.com/ricardogpsf/1843675aa6ca742dfad6ceef6922b81a/raw';
+var URL_EXCUSES = 'https://codepen.io/ricardogpsf/pen/eBPgXv.js';
 
 var CSS_LOADING = ' loading';
 var loadingElement = document.getElementById('loading');
