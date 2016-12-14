@@ -1,10 +1,12 @@
 // var URL_EXCUSES = 'data/desculpas_do_dmz.json';
 // var URL_EXCUSES = 'https://gist.githubusercontent.com/ricardogpsf/1843675aa6ca742dfad6ceef6922b81a/raw';
 var URL_EXCUSES = 'https://codepen.io/ricardogpsf/pen/eBPgXv.js';
+var URL_BASE_AUDIOS = 'https://raw.githubusercontent.com/ricardogpsf/dmz_generator/master/data/audios/';
 
 var CSS_LOADING = ' loading';
 var loadingElement = document.getElementById('loading');
 var excuseElement = document.getElementById('excuse-text');
+var audioElement = document.getElementById('excuse-audio');
 
 document.getElementById('excuse-btn').onclick = function() {
   generateExcuse();
@@ -28,9 +30,14 @@ function generateExcuse() {
 
   findExcuses(function(excuses) {
     loading('stop');
-    var randomIndex = Math.ceil(Math.random() * excuses.length) - 1;
-    var excuse = excuses[randomIndex];
+    var keys = Object.keys(excuses);
+    var values = Object.values(excuses);
+    var randomIndex = Math.ceil(Math.random() * values.length) - 1;
+    var excuse = values[randomIndex];
+    var audioName = keys[randomIndex];
     excuseElement.textContent = "\"Caaaara, " + excuse + ", não dá oh!\"";
+    audioElement.src = URL_BASE_AUDIOS + audioName;
+    audioElement.classList.remove('hide');
   });
 }
 

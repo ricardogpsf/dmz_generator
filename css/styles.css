@@ -38,6 +38,10 @@ body {
  display: none;
 }
 
+.hide {
+  display: none;
+}
+
 @media (min-device-width: 150px) {
   .mastfoot {
     position: relative;
