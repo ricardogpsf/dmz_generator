@@ -35,7 +35,8 @@ function generateExcuse() {
     var randomIndex = Math.ceil(Math.random() * values.length) - 1;
     var excuse = values[randomIndex];
     var audioName = keys[randomIndex];
-    excuseElement.textContent = "\"Caaaara, " + excuse + ", não dá oh!\"";
+    // excuseElement.textContent = "\"Caaaara, " + excuse + ", não dá oh!\"";
+    excuseElement.textContent = "\"" + excuse + "\"";
     audioElement.src = URL_BASE_AUDIOS + audioName;
     audioElement.classList.remove('hide');
   });
