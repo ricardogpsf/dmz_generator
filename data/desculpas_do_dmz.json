@@ -1,14 +1,19 @@
-[
-  "hoje é aniversário da minha vó",
-  "tenho que fazer panfletagem",
-  "vou compilar a nova versão do Arch Linux",
-  "estou com alergia e não tenho o remédio em casa",
-  "estou com sono e não consigo dirigir assim",
-  "já tá tudo fechado aqui em casa",
-  "acho que vai dar",
-  "vou programar em Java",
-  "vou programar em Go",
-  "vou programar em Java e em Go ao mesmo tempo",
-  "nesse dia tenho as responsabilidades da igreja",
-  "tenho que comprar um fone novo pra minha coleção"
-]
+{
+  "aniversario_vo.ogg"          : "hoje é aniversário da minha vó",
+  "panfletagem.ogg"             : "tenho que fazer panfletagem",
+  "compilar_arch_linux.ogg"     : "vou compilar a nova versão do Arch Linux",
+  "alergia_sem_remedio.ogg"     : "estou com alergia e não tenho o remédio em casa",
+  "sono_dirigir.ogg"            : "estou com sono e não consigo dirigir assim",
+  "casa_fechada.ogg"            : "já tá tudo fechado aqui em casa",
+  "nao_vai_dar.ogg"             : "acho que não vai dar",
+  "programar_java.ogg"          : "vou programar em Java",
+  "programar_go.ogg"            : "vou programar em Go",
+  "programar_java_go.ogg"       : "vou programar em Java e em Go ao mesmo tempo",
+  "responsabilidades_igreja.ogg": "nesse dia tenho as responsabilidades da igreja",
+  "fone_novo_colecao.ogg"       : "tenho que comprar um fone novo pra minha coleção",
+  "agora_que_vi_msg.ogg"        : "agora que vi a mensagem de vocês",
+  "alergia_da_sono.ogg"         : "estou com alergia e me dá muito sono",
+  "ajudar_tia.ogg"              : "hoje vou ajudar minha tia",
+  "nao_nao_nao.ogg"             : "não não não não",
+  "nao_e_maneira_ideal.ogg"     : "essa não é a maneira ideal"
+}
