@@ -2,21 +2,6 @@
  * Base structure
  */
 
-
-/* start font for birthday
-	Remove this after the birthday
-*/
-@font-face {
-	font-family: 'KR Birthday Letters';
-	src: url('../fonts/KR Birthday Letters.ttf') format("truetype");
-}
-
-.happy-birthday {
-	font-family: 'KR Birthday Letters';
-	font-size: 70px;
-}
-/* end font for birthday */
-
 html,
 body {
   background-color: #333;
