@@ -8,6 +8,11 @@ var loadingElement = document.getElementById('loading');
 var excuseElement = document.getElementById('excuse-text');
 var audioElement = document.getElementById('excuse-audio');
 
+// Turns the app a PWA with installation lika a native app
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./main-service-worker.js');
+};
+
 document.getElementById('excuse-btn').onclick = function() {
   generateExcuse();
 }
