@@ -1,6 +1,6 @@
-// var URL_EXCUSES = 'data/desculpas_do_dmz.json';
+var URL_EXCUSES = 'data/desculpas_do_dmz.json';
 // var URL_EXCUSES = 'https://gist.githubusercontent.com/ricardogpsf/1843675aa6ca742dfad6ceef6922b81a/raw';
-var URL_EXCUSES = 'https://codepen.io/ricardogpsf/pen/eBPgXv.js';
+// var URL_EXCUSES = 'https://codepen.io/ricardogpsf/pen/eBPgXv.js';
 var URL_BASE_AUDIOS = 'https://raw.githubusercontent.com/ricardogpsf/dmz_generator/master/data/audios/';
 
 var CSS_LOADING = ' loading';
